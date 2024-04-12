@@ -14,6 +14,10 @@ module.exports = ({ env }) => [
             "blob:",
             "market-assets.strapi.io",
             env("SUPABASE_URL"),
+            "https://tile.openstreetmap.org",
+            "https://a.tile.openstreetmap.org",
+            "https://b.tile.openstreetmap.org",
+            "https://c.tile.openstreetmap.org",
           ],
           "media-src": [
             "'self'",
@@ -22,6 +26,7 @@ module.exports = ({ env }) => [
             "market-assets.strapi.io",
             env("SUPABASE_URL"),
           ],
+          upgradeInsecureRequests: null,
         },
       },
     },
